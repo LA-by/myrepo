@@ -3,14 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Basic Input Form</title>
 </head>
 <body>
-  <h4>wdfcstrjsthcqrttqr</h4>
-  <form>
-    <input type="text" name="textfield1">
-    <input type="text" name="textfield2">
-    <input type="submit" value="Submit">
+  <h2>Basic Input Form</h2>
+  
+  <form action="#" method="post">
+    <!-- Name Field -->
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+    
+    <!-- Email Field -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+    
+    <!-- Password Field -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+    
+    <!-- Gender Radio Buttons -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+    
+    <!-- Dropdown -->
+    <label for="city">Select your city:</label><br>
+    <select id="city" name="city">
+      <option value="">--Choose City--</option>
+      <option value="surat">Surat</option>
+      <option value="ahmedabad">Ahmedabad</option>
+      <option value="vadodara">Vadodara</option>
+    </select><br><br>
+    
+    <!-- Submit Button -->
+    <input type="submit" value="Submit Form">
   </form>
 </body>
 </html>
